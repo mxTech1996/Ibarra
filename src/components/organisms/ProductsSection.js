@@ -54,12 +54,13 @@ const ProductsSection = ({ isHome = true }) => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {products
-            .filter((product) => parseFloat(product.price) > 100)
+            .filter((product) => parseFloat(product.price) > 50)
             .map((item, index) => {
               const isInCart = validateProductInCart(item.id);
               const handleClick = () => {
                 if (isHome) {
                   navigation.push('/contact');
+                  return;
                 }
                 handleAddOrRemoveProduct(item.id);
               };
@@ -137,12 +138,13 @@ const ProductsSection = ({ isHome = true }) => {
             viewport={{ once: true, amount: 0.2 }}
           >
             {products
-              .filter((product) => parseFloat(product.price) < 100)
+              .filter((product) => parseFloat(product.price) < 50)
               .map((item, index) => {
                 const isInCart = validateProductInCart(item.id);
                 const handleClick = () => {
                   if (isHome) {
                     navigation.push('/contact');
+                    return;
                   }
                   handleAddOrRemoveProduct(item.id);
                 };
