@@ -66,8 +66,7 @@ const ProductsSection = ({ isHome = true }) => {
               };
 
               return (
-                <motion.a
-                  href='#'
+                <motion.div
                   key={index}
                   variants={itemVariants}
                   className='group relative block h-96 rounded-lg overflow-hidden shadow-lg'
@@ -110,7 +109,7 @@ const ProductsSection = ({ isHome = true }) => {
                       </button>
                     </div>
                   </div>
-                </motion.a>
+                </motion.div>
               );
             })}
         </motion.div>
@@ -150,8 +149,7 @@ const ProductsSection = ({ isHome = true }) => {
                 };
 
                 return (
-                  <motion.a
-                    href='#'
+                  <motion.div
                     key={index}
                     variants={itemVariants}
                     className='group relative block h-96 rounded-lg overflow-hidden shadow-lg'
@@ -194,7 +192,7 @@ const ProductsSection = ({ isHome = true }) => {
                         </button>
                       </div>
                     </div>
-                  </motion.a>
+                  </motion.div>
                 );
               })}
           </motion.div>
