@@ -114,7 +114,7 @@ const ProductsSection = ({ isHome = true }) => {
       </div>
 
       {!isHome && (
-        <div className='container mx-auto px-4'>
+        <div className='container mx-auto px-4 mt-10'>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
