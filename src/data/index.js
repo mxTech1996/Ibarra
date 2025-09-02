@@ -1,4 +1,4 @@
-export const pageName = 'Detroit';
+export const pageName = 'Ibarra';
 
 export const email = 'info@detroit.com';
 import { IoCall, IoFileTraySharp, IoMail } from 'react-icons/io5';
@@ -66,368 +66,360 @@ export const benefitsData = [
 ];
 
 export const dataSite = {
-  name: 'Detroit',
+  name: 'Ibarra',
   url: 'https://es.wiktionary.org/wiki/hol',
-  telephone: '5516455347',
+  telephone: '5516453412',
   email: '',
   address:
-    'AV INSURGENTES SUR 1392, PISO 3 INTERIOR B, ACTIPAN, BENITO JUAREZ, CIUDAD DE MEXICO, C.P. 03230',
+    'AV.RIO MIXCOAC 25, PISO 2 INTERIOR 1 B, CREDITO CONSTRUCTOR, BENITO JUAREZ, CIUDAD DE MEXICO, C.P.03940',
   description:
-    'Our law firm specializes in providing comprehensive legal advice and professional representation to individuals, businesses, and organizations seeking reliable and effective legal solutions. Through our website, we offer clear and accessible information about our services, practice areas, and the expertise of our attorneys.',
-  subtitle: 'Protecting Your Rights, Securing Your Future',
+    'Our website is designed to provide comprehensive management consulting solutions, aimed at optimizing business operations and driving sustainable growth for organizations. Through a professional and user-friendly platform, we offer companies of all sizes access to tailored strategies in key areas such as strategic planning, human resources management, operational processes, corporate finance, and digital transformation.',
+  subtitle: 'Empowering Businesses with Smart Management Solutions',
   image_hero:
-    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/detroit_1_.jpg',
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarra_1__7E1m3tC.jpg',
   image_hero2:
-    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/detroit_2_.jpg',
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarar2__uswwAn4.jpg',
   iconImage:
-    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/detroitlegalconsultingsderlde-cv-high-resolution-logo.png',
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarra-admincont-sa-de-cv-high-resolution-logo_mNz8lJ3.png',
   info: [
     {
-      title: 'Practice Areas',
+      title: 'Data Driven Decision Coaching',
       description:
-        'Civil, corporate, labor, criminal, family, and administrative law.',
+        'Personalized mentoring that leverages analytics dashboards and KPIs to guide executives toward smarter, evidence-based decisions.',
     },
     {
-      title: 'Online Consulting',
+      title: 'AI-Powered Business Diagnostics',
       description:
-        'Options to schedule appointments and receive legal guidance virtually or in person.',
+        'Use of artificial intelligence tools to analyze company data and provide real-time recommendations for efficiency, cost reduction, and decision-making.',
     },
     {
-      title: 'Legal Resources',
+      title: 'Virtual Strategy Labs',
       description:
-        'Articles, guides, and regulatory updates to keep clients informed.',
+        'Interactive online workshops where business leaders can simulate scenarios, test strategies, and receive expert feedback instantly.',
     },
     {
-      title: 'Personalized Support',
+      title: 'Sustainability & ESG Consulting',
       description:
-        'A direct contact space for quick inquiries, service quotes, or document reviews.',
+        'Advisory services focused on integrating sustainable practices, ESG (Environmental, Social, Governance) compliance, and green certifications into business operations.',
     },
     {
-      title: 'Values',
+      title: 'Remote Workforce Management Solutions',
       description:
-        'Comprehensive legal advice and professional representation to individuals, businesses, and organizations seeking reliable and effective legal solutions.',
+        'Specialized consulting to optimize productivity, communication, and performance tracking in hybrid or fully remote teams.',
     },
   ],
   services: [
     {
-      title: 'Legal Advisory and Consultation',
+      title: 'Business Strategy Development',
       description:
-        'Personalized guidance on civil, criminal, corporate, labor, and family law matters, tailored to each client’s situation.',
+        'Helping organizations define long-term goals, competitive positioning, and growth strategies.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/detroit_3_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_5_.jpg',
     },
     {
-      title: 'Contract Drafting and Review',
+      title: 'Financial Planning and Analysis',
       description:
-        'Preparation, analysis, and negotiation of contracts and legal agreements to ensure compliance and protect client interests.',
+        'Providing budgeting, forecasting, and financial strategy guidance to support informed decision-making.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/detroit_4_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_8_.jpg',
     },
     {
-      title: 'Litigation and Legal Representation',
+      title: 'Operational Efficiency Consulting',
       description:
-        'Professional defense and representation before courts, arbitration panels, and government authorities.',
+        'Analyzing business processes to optimize performance, reduce costs, and improve productivity',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/detroit_5_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibrara_6_.jpg',
     },
     {
-      title: 'Regulatory Compliance and Risk Management',
+      title: 'Organizational Design and Restructuring',
       description:
-        'Assistance for individuals and businesses in complying with legal requirements while minimizing risks and liabilities.',
+        'Designing effective organizational structures, roles, and workflows to enhance collaboration and performance.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/detroit_6_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_7_.jpg',
     },
     {
-      title: 'Mediation and Dispute Resolution',
+      title: 'Change Management and Implementation Support',
       description:
-        'Alternative conflict resolution methods, including mediation and arbitration, to reach effective solutions outside of court.',
+        'Guiding businesses through transformations, including technology adoption, process changes, and cultural shifts.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/detroit_7_.jpg',
-    },
-    {
-      title: 'Intellectual Property Protection',
-      description:
-        'Advisory and legal services for the registration, enforcement, and defense of trademarks, copyrights, and patents to safeguard creative and business assets.',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/detroit_8_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_9_.jpg',
     },
   ],
   references: [
     {
-      name: 'Carlos M.Business Owner',
+      name: 'Angy Fausto',
       description:
-        'The team provided outstanding legal advice during our business merger. Their Due Diligence Report was detailed, clear, and helped us avoid costly mistakes.',
+        'Their strategic insights completely transformed our business approach. We now operate with much more efficiency and clarity.',
       rating: 5,
       image: null,
     },
     {
-      name: 'Sarah L.HR Manager',
+      name: 'Manger of startup',
       description:
-        'I was impressed by their professionalism and quick response. They drafted and reviewed my employment contracts efficiently and explained every detail.',
+        'Thanks to their digital transformation roadmap, our company successfully implemented new technologies with minimal disruption.',
       rating: 5,
       image: null,
     },
     {
-      name: 'Jonathan R.Private Client',
+      name: 'David H., HR Director',
       description:
-        'Thanks to their litigation support, I felt confident throughout my court case. They fought for my rights with dedication and achieved a favorable outcome.',
+        'The leadership assessment and training programs were invaluable. Our managers are now more confident and effective in their roles.',
       rating: 5,
       image: null,
     },
     {
-      name: 'Emily K, Entrepreneur',
+      name: 'Laura M., Business Owner',
       description:
-        'The law firm helped us with intellectual property registration. Their guidance ensured our brand is fully protected internationally.',
+        'Professional, responsive, and results-driven. Their guidance has helped our organization grow sustainably and strategically.',
       rating: 5,
       image: null,
     },
     {
-      name: 'Michael T,CEO of a Tech Startup',
+      name: 'July Ignacio',
       description:
-        'We use their compliance audit service regularly. It gives us peace of mind knowing that our company is operating within all legal requirements.',
+        'The team’s expertise in process optimization helped us cut costs and improve productivity across all departments',
       rating: 5,
       image: null,
     },
   ],
   products: [
     {
-      id: 924,
-      name: 'Contract Templates Bundle',
+      id: 947,
+      name: 'Market Analysis Report',
       category: null,
       description:
-        'The Contract Templates Bundle is a legal package designed for businesses, entrepreneurs, and professionals who need clear, reliable, and ready-to-use contracts. This collection provides customizable documents that cover common business scenarios, helping protect legal interests and minimize risks without the need to draft agreements from scratch.',
-      price: '100.00',
+        'Detailed research on industry trends, competitors, and opportunities for growth.',
+      price: '145.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detraoit_10.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_16_.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 925,
-      name: 'Compliance Audit Kit',
+      id: 953,
+      name: 'KPI Monitoring Dashboard',
       category: null,
       description:
-        'The Compliance Audit Kit is a comprehensive toolkit designed for businesses to assess, monitor, and ensure compliance with legal, regulatory, and industry standards. It provides structured guidance, checklists, and templates to identify gaps, mitigate risks, and maintain regulatory adherence effectively. Ideal for companies seeking to streamline internal audits and strengthen their compliance programs.',
-      price: '190.00',
+        'Customizable dashboard to track performance metrics across departments.',
+      price: '23.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_11.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra20.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 926,
-      name: 'Startup Legal Toolkit',
+      id: 940,
+      name: 'Organizational Structure Design Kit',
       category: null,
       description:
-        'The Startup Legal Toolkit is a comprehensive package designed for entrepreneurs and early-stage startups to handle legal matters efficiently. It provides essential legal documents, templates, and guidance to help startups establish a strong legal foundation, protect intellectual property, and ensure regulatory compliance while minimizing costs and risks.',
-      price: '144.00',
+        'Organizational analysis and redesign package to improve hierarchies, workflows, and key roles within the company,Consultport ,Organizational Design Tool Kit,Consultport ,Organizational Design Toolkit,PDF guide ,organizational chart template; covers types of structures, key factors, and strategic considerations.',
+      price: '120.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit._12.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_4.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 931,
-      name: 'Legal Document Review',
+      id: 943,
+      name: 'Human Capital Development Plan',
       category: null,
       description:
-        'Detailed analysis of contracts, agreements, or policies before signing to ensure client protection.',
-      price: '189.00',
+        "A Human Capital Development Plan is a strategic framework designed to enhance an organization's workforce capabilities. It focuses on aligning employee skills, experiences, and potential with organizational goals, ensuring sustainable growth and adaptability in a dynamic business environment.",
+      price: '145.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_17_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarrra_12_.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 932,
-      name: 'Trademark Search and Filing',
+      id: 942,
+      name: 'Process Optimization Manual',
       category: null,
       description:
-        'Trademark Search and Filing\r\nAssistance with researching, registering, and maintaining trademarks.',
-      price: '140.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_18.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 927,
-      name: 'Employee Handbook Drafting Service',
-      category: null,
-      description:
-        'The Employee Handbook Drafting Service provides businesses with a professionally crafted employee handbook that clearly communicates company policies, procedures, and workplace expectations. This service helps organizations establish consistency, ensure compliance with labor laws, and create a positive work environment.',
-      price: '200.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroti._13.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 933,
-      name: 'Employment Contract Drafting',
-      category: null,
-      description:
-        'Tailor made employment agreements that comply with labor laws.',
-      price: '100.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_19.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 934,
-      name: 'Privacy Policy and Terms of Service Drafting',
-      category: null,
-      description:
-        'Customized policies for websites, apps, and businesses to ensure compliance with data protection laws.',
-      price: '16.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_20.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 935,
-      name: 'Corporate Governance Consultation',
-      category: null,
-      description:
-        'Advisory on board structures, shareholder agreements, and internal regulations.',
-      price: '15.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_21.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 936,
-      name: 'Litigation Support Package',
-      category: null,
-      description:
-        'Preparation of legal briefs, evidence review, and case strategy planning.',
-      price: '18.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_22.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 937,
-      name: 'Immigration Legal Assistance',
-      category: null,
-      description:
-        'Guidance on visas, residency, work permits, and compliance with immigration laws.',
-      price: '19.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_23_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 938,
-      name: 'Debt Collection and Recovery Service',
-      category: null,
-      description:
-        'Legal support to recover outstanding payments through negotiation or legal action.',
-      price: '15.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_24.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 929,
-      name: 'Intellectual Property Registration Pack',
-      category: null,
-      description:
-        'The Intellectual Property (IP) Registration Pack is a comprehensive service package designed to help businesses, startups, and creators protect their innovations, brands, and creative works. It provides end-to-end support in registering trademarks, copyrights, and patents, ensuring that intellectual property rights are legally secured and enforced.',
-      price: '156.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_15_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 928,
-      name: 'Legal Risk Assessment Report',
-      category: null,
-      description:
-        'The Legal Risk Assessment Report is a comprehensive analysis designed to help businesses identify, evaluate, and mitigate potential legal risks. It provides a structured evaluation of contracts, policies, regulatory compliance, and operational practices to ensure your company operates within legal boundaries and minimizes exposure to liability.',
-      price: '250.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit._14.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 930,
-      name: 'Due Diligence Report Service',
-      category: null,
-      description:
-        'The Due Diligence Report Service provides a thorough and structured legal, financial, and operational review to support informed decision-making in mergers, acquisitions, partnerships, and major investments. This product ensures that clients have a complete understanding of potential risks, obligations, and opportunities before closing any transaction.',
+        'A Process Optimization Manual is a comprehensive guide designed to help organizations enhance their workflow efficiency, reduce costs, and improve overall performance. It provides structured methodologies, tools, and best practices to identify inefficiencies and implement improvements effectively.',
       price: '178.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit__16_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_11.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 923,
-      name: 'Business Formation Package',
+      id: 948,
+      name: 'Leadership Assessment Tool',
       category: null,
       description:
-        'Is a comprehensive service designed for entrepreneurs and companies seeking to establish a legal entity quickly, securely, and in full compliance with current regulations.',
-      price: '220.00',
+        'Evaluates management skills, team dynamics, and leadership effectiveness.',
+      price: '175.00',
       stock: 100,
-      content:
-        'Personalized Initial Consultation,Evaluation of the most suitable entity type (LLC, Corporation, Partnership, etc.),Analysis of legal, tax, and liability protection benefits,Drafting and Filing of Legal Documents,Preparation of bylaws, articles of incorporation, or other required documents,Official filing with the relevant government authority,Business Name Search and Reservation,Verification of business name availability,Reservation of the name with the commercial registry or regulating entity.',
+      content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/detroit_9_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra__17_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 941,
+      name: 'Financial Health Report',
+      category: null,
+      description:
+        "A Financial Health Report is a comprehensive assessment tool that evaluates the financial stability and risk profile of a company. It provides an in depth analysis based on actual financial data, offering insights into the company's current and historical financial health.",
+      price: '90.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_10.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 939,
+      name: 'Business Strategy Blueprint',
+      category: null,
+      description:
+        'A detailed analysis of business objectives, competitive positioning, revenue models, and an execution roadmap,In depth exploration of market opportunities, operational efficiencies, and strategic initiatives aimed at sustainable and scalable growth,Internal valuation,equivalent to 4 credits and an estimated development timeline of 3 to 4 weeks.',
+      price: '130.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra._3.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 951,
+      name: 'Employee Training Module',
+      category: null,
+      description:
+        'Digital course or materials focused on improving skills and productivity within teams.',
+      price: '12.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_19_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 954,
+      name: 'Digital Adoption Planner',
+      category: null,
+      description:
+        'Roadmap for integrating new technologies and managing organizational change effectively.',
+      price: '18.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_21.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 952,
+      name: 'Compliance Audit Guide',
+      category: null,
+      description:
+        'Toolkit to ensure the organization meets legal and regulatory requirements.',
+      price: '15.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_20.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 950,
+      name: 'Budget Forecast Template',
+      category: null,
+      description:
+        'Pre designed template to plan financial projections and monitor expenses.',
+      price: '9.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_18.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 944,
+      name: 'Digital Transformation Roadmap',
+      category: null,
+      description:
+        'A Digital Transformation Roadmap is a strategic plan that guides an organization through the process of integrating digital technologies into all areas of its business. It serves as a blueprint for transforming business operations, enhancing customer experiences, and fostering innovation. The roadmap outlines the necessary steps, resources, and timelines to achieve a successful digital transformation.',
+      price: '138.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/IBARRA_13_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 949,
+      name: 'Operational Efficiency Checklist',
+      category: null,
+      description:
+        'Step by step guide to streamline processes and reduce operational bottlenecks.',
+      price: '189.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/pexels-rdne-9034219.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 945,
+      name: 'Risk and Compliance Toolkit',
+      category: null,
+      description:
+        'A Risk and Compliance Toolkit is a comprehensive set of resources designed to help organizations manage and mitigate risks associated with regulatory non-compliance. It integrates various features such as compliance tracking, audit management, risk assessment, and incident management to ensure businesses adhere to legal, industry-specific, and internal standards.',
+      price: '89.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_14_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 946,
+      name: 'Performance Dashboard Setup',
+      category: null,
+      description:
+        'A Performance Dashboard Setup is a strategic tool designed to monitor and visualize key performance indicators (KPIs) and metrics in real time. It consolidates data from various sources into a unified interface, enabling organizations to track performance, identify trends, and make informed decisions.',
+      price: '160.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_15_.jpg',
       image2: null,
       image3: null,
     },

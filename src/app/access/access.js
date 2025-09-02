@@ -74,7 +74,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <Navbar withAll={false} textBlack={true} />
+      <Navbar withCart={false} withAll={false} textBlack={true} />
       <main className='flex items-center justify-center min-h-screen bg-gray-100'>
         <div className='w-full max-w-md p-8 space-y-8 bg-white rounded-xl shadow-lg'>
           {/* Header Section */}

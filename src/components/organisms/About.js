@@ -2,35 +2,39 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Link from 'next/link';
+// Ícono opcional si prefieres no usar números
+import { LuTrendingUp, LuUsers, LuGlobe } from 'react-icons/lu';
 
-// --- Datos para la sección ---
-const firmValues = [
+// --- Datos para las estadísticas clave ---
+const statsData = [
   {
-    title: 'Unwavering Integrity',
+    value: '20+',
+    title: 'Years of Combined Experience',
     description:
-      'Upholding the highest ethical standards is the cornerstone of our practice.',
+      'Our senior partners bring decades of cross-industry expertise to every project.',
   },
   {
-    title: 'Decades of Experience',
+    value: '95%',
+    title: 'Client Success Rate',
     description:
-      'Leveraging years of combined experience to navigate complex legal landscapes.',
+      'We pride ourselves on delivering measurable results and fostering long-term partnerships.',
   },
   {
-    title: 'Client-Centric Commitment',
+    value: '15+',
+    title: 'Countries Served',
     description:
-      'Your objectives are our priority. We are dedicated to achieving your desired outcomes.',
+      'Providing strategic insights to businesses navigating the global marketplace.',
   },
 ];
 
-const affiliations = [];
-
 const AboutSection = () => {
-  const sectionVariants = {
+  // Variantes para animación escalonada
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.3, delayChildren: 0.2 },
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 },
     },
   };
 
@@ -43,80 +47,61 @@ const AboutSection = () => {
     },
   };
 
-  const imageVariants = {
-    hidden: { x: -20, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.6, ease: 'easeOut' },
-    },
-  };
-
   return (
-    <section id='about' className='py-20 md:py-28 bg-stone-100'>
+    <section id='about' className='py-20 md:py-28 bg-white'>
       <motion.div
-        className='container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start'
-        variants={sectionVariants}
+        className='container mx-auto px-4 text-center max-w-4xl'
+        variants={containerVariants}
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* --- Columna de la Imagen (Izquierda) --- */}
-        <motion.div variants={imageVariants}>
-          <div className='w-full h-auto rounded-lg overflow-hidden shadow-xl'>
-            <Image
-              src='/images/about.png' // Reemplaza con la ruta a tu imagen generada
-              alt='Senior partner at Blackwood & Sterling'
-              width={600}
-              height={700}
-              className='object-cover'
-            />
-          </div>
-          <div className='mt-8 grid grid-cols-3 sm:grid-cols-6 gap-4 items-center'>
-            {affiliations.map((logo, index) => (
-              <div key={index} className='flex justify-center'>
-                <Image
-                  src={logo}
-                  alt={`Affiliation logo ${index + 1}`}
-                  width={80}
-                  height={40}
-                  className='opacity-50 grayscale'
-                />
-              </div>
-            ))}
-          </div>
+        <motion.p
+          variants={itemVariants}
+          className='font-semibold text-yellow-500 mb-2'
+        >
+          About Stratagem
+        </motion.p>
+        <motion.h2
+          variants={itemVariants}
+          className='text-4xl md:text-5xl font-bold text-slate-900 mb-6'
+        >
+          Welcome to Stratagem Consulting Group
+        </motion.h2>
+        <motion.p
+          variants={itemVariants}
+          className='text-lg text-gray-600 mb-12'
+        >
+          We are a premier management consulting firm dedicated to helping
+          businesses navigate complexity, overcome challenges, and achieve
+          sustainable growth. Our data-driven approach ensures that we deliver
+          not just advice, but tangible results.
+        </motion.p>
+
+        {/* --- Grid de Estadísticas --- */}
+        <motion.div
+          variants={itemVariants}
+          className='grid grid-cols-1 md:grid-cols-3 gap-8'
+        >
+          {statsData.map((stat, index) => (
+            <div key={index} className='p-6 border border-gray-200 rounded-lg'>
+              <p className='text-5xl font-bold text-yellow-500 mb-3'>
+                {stat.value}
+              </p>
+              <h3 className='text-xl font-semibold text-slate-800 mb-2'>
+                {stat.title}
+              </h3>
+              <p className='text-gray-500 text-sm'>{stat.description}</p>
+            </div>
+          ))}
         </motion.div>
 
-        {/* --- Columna de Texto (Derecha) --- */}
-        <motion.div variants={itemVariants} className='pt-4'>
-          <p className='font-semibold text-amber-600 mb-2'>Who We Are</p>
-          <h2 className='text-4xl md:text-5xl font-bold text-slate-900 mb-6'>
-            About Blackwood & Sterling
-          </h2>
-          <p className='text-gray-600 mb-4 leading-relaxed'>
-            Founded on the principles of integrity and expertise, Blackwood &
-            Sterling LLP has established itself as a premier law firm dedicated
-            to providing exceptional legal services. Our firm was built with a
-            singular mission: to offer clients a clear path through their most
-            complex legal challenges.
-          </p>
-          <p className='text-gray-600 mb-8 leading-relaxed'>
-            We combine traditional legal wisdom with modern, innovative
-            strategies to ensure the best possible outcomes. Our attorneys are
-            not just legal practitioners; they are trusted advisors committed to
-            your long-term success.
-          </p>
-
-          <div className='space-y-6 border-l-2 border-amber-600 pl-6'>
-            {firmValues.map((value, index) => (
-              <div key={index}>
-                <h3 className='text-xl font-bold text-slate-800'>
-                  {value.title}
-                </h3>
-                <p className='text-gray-500 mt-1'>{value.description}</p>
-              </div>
-            ))}
-          </div>
+        <motion.div variants={itemVariants} className='mt-12'>
+          <Link href='#why-us'>
+            <button className='px-8 py-3 bg-slate-800 text-white font-semibold rounded-md hover:bg-slate-700 transition-colors'>
+              Learn More About Us
+            </button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

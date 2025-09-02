@@ -1,29 +1,26 @@
 // En tu archivo: /components/Footer.js
 'use client';
 
+import { dataSite, email } from '@/data';
 import { motion } from 'framer-motion';
-// Íconos de redes sociales
-
 import Image from 'next/image';
-import { dataSite, email, phoneNumber } from '@/data';
 
 // --- Datos para los enlaces del footer ---
 const footerLinks = {
-  navigation: [
-    { name: 'About Us', href: '#' },
-    { name: 'Attorneys', href: '#' },
-    { name: 'Case Studies', href: '#' },
-    { name: 'Contact', href: '#' },
+  explore: [
+    { name: 'About Us', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Products', href: '#products' },
+    { name: 'Why Us', href: '#why-us' },
   ],
-  practiceAreas: [
-    { name: 'Corporate Law', href: '#' },
-    { name: 'Commercial Litigation', href: '#' },
-    { name: 'Real Estate Law', href: '#' },
-    { name: 'Intellectual Property', href: '#' },
+  legal: [
+    { name: 'Privacy Policy', href: '#' },
+    { name: 'Terms & Conditions', href: '#' },
   ],
 };
 
 const Footer = () => {
+  // Variantes para animación
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -46,38 +43,25 @@ const Footer = () => {
         whileInView='visible'
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          {/* Columna 1: About Firm */}
-          <motion.div
-            variants={itemVariants}
-            className='md:col-span-2 lg:col-span-1'
-          >
-            <h3 className='text-2xl font-bold mb-4'>Detroit</h3>
-            <p className='text-gray-300 mb-4 max-w-xs'>
-              Forging Justice, Securing Futures. Your trusted legal advisors.
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
+          {/* Columna 1: Nombre de la empresa */}
+          <motion.div variants={itemVariants} className='lg:col-span-1'>
+            <h3 className='text-2xl font-bold mb-4'>Ibarra</h3>
+            <p className='text-gray-300 max-w-xs'>
+              A leading consultancy firm providing first-class management and
+              strategic services across various industries.
             </p>
-            {/* <div className='flex gap-4'>
-              <a href='#' className='hover:text-amber-500 transition-colors'>
-                <LuTwitter size={20} />
-              </a>
-              <a href='#' className='hover:text-amber-500 transition-colors'>
-                <LuLinkedin size={20} />
-              </a>
-              <a href='#' className='hover:text-amber-500 transition-colors'>
-                <LuFacebook size={20} />
-              </a>
-            </div> */}
           </motion.div>
 
-          {/* Columna 2: Navigation */}
+          {/* Columna 2: Explorar */}
           <motion.div variants={itemVariants}>
-            <h4 className='font-bold text-lg mb-4'>Navigation</h4>
+            <h4 className='font-bold text-lg mb-4'>Explore</h4>
             <ul className='space-y-2'>
-              {footerLinks.navigation.map((link) => (
+              {footerLinks.explore.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className='text-gray-300 hover:text-amber-500 transition-colors'
+                    className='text-gray-300 hover:text-yellow-400 transition-colors'
                   >
                     {link.name}
                   </a>
@@ -86,15 +70,15 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Columna 3: Practice Areas */}
+          {/* Columna 3: Legal */}
           <motion.div variants={itemVariants}>
-            <h4 className='font-bold text-lg mb-4'>Practice Areas</h4>
+            <h4 className='font-bold text-lg mb-4'>Legal</h4>
             <ul className='space-y-2'>
-              {footerLinks.practiceAreas.map((link) => (
+              {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className='text-gray-300 hover:text-amber-500 transition-colors'
+                    className='text-gray-300 hover:text-yellow-400 transition-colors'
                   >
                     {link.name}
                   </a>
@@ -103,57 +87,40 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Columna 4: Contact */}
+          {/* Columna 4: Contacto y Pagos */}
           <motion.div variants={itemVariants}>
             <h4 className='font-bold text-lg mb-4'>Get In Touch</h4>
-            <address className='not-italic text-gray-300 space-y-2'>
+            {/* --- Información de contacto añadida --- */}
+            <address className='not-italic text-gray-300 space-y-2 mb-6'>
               <p>{dataSite.address}</p>
               <p>
                 <a
-                  href={`tel:${phoneNumber}`}
-                  className='hover:text-amber-500 transition-colors'
-                >
-                  {phoneNumber}
-                </a>
-              </p>
-              <p>
-                <a
-                  href={`mailto:${email}`}
-                  className='hover:text-amber-500 transition-colors'
+                  href='mailto:contact@ibarra.consulting'
+                  className='hover:text-yellow-400 transition-colors'
                 >
                   {email}
                 </a>
               </p>
             </address>
+
+            {/* --- Logo de Visa y Mastercard --- */}
+            <h4 className='font-bold text-lg mb-2'>Accepted Payments</h4>
+            <div className='w-24 h-auto'>
+              <Image
+                src='/images/visaMaster.png'
+                alt='Visa and Mastercard logos'
+                width={100}
+                height={30}
+                objectFit='contain'
+              />
+            </div>
           </motion.div>
         </div>
 
-        {/* --- Sub-Footer con Copyright y Logo de Visa --- */}
-        <div className='mt-16 pt-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-4'>
-          <div className='text-center md:text-left'>
-            <p>&copy; 2025 Detroit. All Rights Reserved.</p>
-            <p className='mt-2'>
-              <a href='#' className='hover:text-amber-500 transition-colors'>
-                Privacy Policy
-              </a>{' '}
-              |{' '}
-              <a href='#' className='hover:text-amber-500 transition-colors'>
-                Terms of Service
-              </a>
-            </p>
-          </div>
-          {/* --- AÑADIDO: Sección para el logo de Visa --- */}
-          <div className='flex items-center gap-2'>
-            <p className='font-semibold'>Accepted Payments:</p>
-
-            <Image
-              src='/images/visaMaster.png'
-              alt='Visa'
-              width={80}
-              height={50}
-              className='object-contain'
-            />
-          </div>
+        {/* --- Sub-Footer con Copyright --- */}
+        <div className='mt-16 pt-8 border-t border-slate-700 text-center text-gray-400 text-sm'>
+          {/* --- Nombre de la empresa actualizado --- */}
+          <p>&copy; {new Date().getFullYear()} Ibarra. All Rights Reserved.</p>
         </div>
       </motion.div>
     </footer>

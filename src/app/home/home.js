@@ -1,23 +1,27 @@
 'use client';
 
-import Navbar from '../../components/organisms/Navbar';
 import HeroSection from '@/components/organisms/Hero';
 import AboutSection from '@/components/organisms/About';
-import PracticeAreas from '@/components/organisms/Practice';
 import WhyChooseUs from '@/components/organisms/WhyChoose';
-import Products from '@/components/organisms/Products';
 import Testimonials from '@/components/organisms/Testimonial';
 import Footer from '@/components/organisms/Footer';
+import ApproachSection from '@/components/organisms/Approach';
+import IndustriesSection from '@/components/organisms/IndustriesSection';
+import ServicesSection from '@/components/organisms/Services';
+import CallToActionSection from '@/components/organisms/CalltoAction';
+import ProductsSection from '@/components/organisms/ProductsSection';
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <HeroSection />
       <AboutSection />
-      <PracticeAreas />
+      <ApproachSection />
+      <IndustriesSection />
       <WhyChooseUs />
-      <Products />
+      <ProductsSection />
+      <ServicesSection />
+      <CallToActionSection />
       <Testimonials />
       <Footer />
     </div>
