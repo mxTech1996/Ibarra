@@ -7,7 +7,3 @@
   @tailwind components;
   @tailwind utilities;
 }
-
-* {
-  font-family: var(--font-nunito) !important;
-}

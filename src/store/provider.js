@@ -1,27 +1,13 @@
-"use client";
-import { MainProvider } from "ecommerce-mxtech";
-import { useInformation } from "./useInformation";
-import { primaryColor } from "@/data";
+'use client';
+import { dataSite } from '@/data';
+import { MainProvider } from 'ui-old-version';
 
 const Provider = ({ children }) => {
-  const { dataSite } = useInformation();
-  const products = dataSite.products.map((product) => {
-    return {
-      ...product,
-      content: product.content.split(", "),
-      product_type: product.product_type?.toLowerCase(),
-    };
-  });
-
   return (
     <MainProvider
-      pageName={dataSite.name}
-      products={products}
-      address={dataSite.address}
-      email={dataSite.email}
-      phoneNumber={dataSite.telephone}
-      locale={"en"}
-      colorPrimary={primaryColor}
+      products={dataSite.products}
+      locale={'en'}
+      colorPrimary={'#2792f0'}
     >
       {children}
     </MainProvider>

@@ -1,29 +1,36 @@
 /** @type {import('tailwindcss').Config} */
+const primary = '#2792f0' // Blue
+
+
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       height: {
-        hero: "calc(100vh - 104px)",
+        hero: 'calc(100vh - 70px)',
       },
       colors: {
-        primary: "#f7dc6f", // Azul crema
-        secondary: "#f7dc6f", // azul cielo
-        third: "#e74c3c", // Azul claro
-        black: "#001", // Gris oscuro
+        primary,
       },
-
+      textColor: {
+        primary: '#000000', // Negro (para una alta legibilidad) 
+        third: primary,
+      },
+      backgroundColor: {
+        primary: '#FFFFFF', // Blanco (símbolo de pureza y claridad)
+        secondary: '#3d3d3d', // Negro claro
+        third: primary,
+      },
       backgroundImage: {
-        hero: 'url("/images/mesa1.jpeg")',
-        details: 'url("/images/mesa2.jpeg")',
+        hero: 'url("/images/social-1.jpg")',
       },
       fontFamily: {
-        nunito: ["var(--font-nunito)"],
-        urbanist: ["var(--font-urbanist)"],
+        lato: ['var(--font-lato)'],
+        urbanist: ['var(--font-urbanist)'],
       },
     },
   },

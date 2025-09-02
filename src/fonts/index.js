@@ -1,9 +1,9 @@
-import { Montserrat, Urbanist } from "next/font/google";
+import { Lato, Urbanist } from "next/font/google";
 
-export const fontNunito = Montserrat({
+export const fontLato = Lato({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-nunito",
+  weight: ["300", "400", "700", '900'],
+  variable: "--font-lato",
 });
 
 export const fontUrbanist = Urbanist({
