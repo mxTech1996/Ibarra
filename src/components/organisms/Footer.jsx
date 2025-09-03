@@ -14,8 +14,8 @@ const footerLinks = {
     { name: 'Why Us', href: '#why-us' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Terms & Conditions', href: '#' },
+    { name: 'Privacy Policy', href: '/pdf/AP.IBARRA.SEPTIEMBRE.2025.pdf' },
+    { name: 'Terms & Conditions', href: '/pdf/TYC.IBARRA.SEPTIEMBRE.2025.pdf' },
   ],
 };
 
@@ -77,6 +77,7 @@ const Footer = () => {
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <a
+                    target='_blank'
                     href={link.href}
                     className='text-gray-300 hover:text-yellow-400 transition-colors'
                   >
